@@ -28,6 +28,8 @@ brew "zsh-syntax-highlighting"
 
 brew 'tree'
 brew 'openssl'
+brew 'rbenv'
+brew 'ruby-build'
 brew 'postgresql@14'
 brew 'redis'
 brew 'cmake'
@@ -56,8 +58,6 @@ cask 'android-studio'
 cask 'mysqlworkbench'
 cask 'postman'
 cask 'google-chrome'
-cask "microsoft-edge"
-cask 'chromium'
 cask 'iterm2'
 cask 'figma'
 cask 'pgadmin4'

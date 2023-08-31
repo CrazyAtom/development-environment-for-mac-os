@@ -3,6 +3,10 @@
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# m1 brew path
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
 # install via brew
 brew bundle --file=./Brewfile
 
@@ -36,10 +40,6 @@ sudo xattr -dr com.apple.quarantine /Applications/Postman.app
 open /Applications/Postman.app
 sudo xattr -dr com.apple.quarantine /Applications/Google\ Chrome.app
 open /Applications/Google\ Chrome.app
-sudo xattr -dr com.apple.quarantine /Applications/Microsoft\ Edge.app
-open /Applications/Microsoft\ Edge.app
-sudo xattr -dr com.apple.quarantine /Applications/Chromium.app
-open /Applications/Chromium.app
 sudo xattr -dr com.apple.quarantine /Applications/Android\ Studio.app
 open /Applications/Android\ Studio.app
 sudo xattr -dr com.apple.quarantine /Applications/iTerm.app
