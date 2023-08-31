@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -62,27 +64,35 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenv)
+plugins=(
+    git 
+    virtualenv
+    fzf
+    fasd
+    asdf
+)
 
 # python virtualenv
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 
-# For Ruby
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export CFLAGS=""
-RUBYOPT='-W:no-deprecated -W:no-experimental'
-alias bundler=$HOME/.rbenv/shims/bundler
-alias ruby=$HOME/.rbenv/shims/ruby
-alias bundle=$HOME/.rbenv/shims/bundle
-alias gem=$HOME/.rbenv/shims/gem
-alias rails=$HOME/.rbenv/shims/rails
-alias rake=$HOME/.rbenv/shims/rake
+alias a='fasd -a'        # any 이동
+alias s='fasd -si'       # interactive + select
+alias d='fasd -d'        # 디렉터리찾기
+alias f='fasd -f'        # 파일찾기
+alias sd='fasd -sid'     # 디렉터리 선택
+alias z='fasd_cd -d'     # 디렉터리 이동
+alias zz='fasd_cd -d -i' # 디렉터리 선택 후 이동
+alias cat='bat --paging=never'
+
+alias vi=nvim
+alias vim=nvim
+export EDITOR=/usr/local/bin/nvim
 
 source $ZSH/oh-my-zsh.sh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
@@ -136,8 +146,6 @@ eval "$(pyenv virtualenv-init -)"
 export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 alias composer="php /usr/local/bin/composer"
-# Laravel
-export PATH="$HOME/.composer/vendor/bin:$PATH"
 # mysql
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
@@ -188,3 +196,11 @@ alias go=~/.goenv/shims/go
 # JDK
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+DEFAULT_USER="$(whoami)"
+
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}

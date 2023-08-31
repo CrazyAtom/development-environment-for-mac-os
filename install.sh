@@ -1,7 +1,7 @@
 # !/bin/bash
 
 # install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install via brew
 brew bundle --file=./Brewfile
@@ -14,6 +14,14 @@ rbenv rehash
 rbenv global ${VERSION}
 rbenv rehash
 
+sudo xattr -dr com.apple.quarantine /Applications/Hidden\ Bar.app
+open /Applications/Hidden\ Bar.app
+sudo xattr -dr com.apple.quarantine /Applications/MonitorControl.app
+open /Applications/MonitorControl.app
+sudo xattr -dr com.apple.quarantine /Applications/Raycast.app
+open /Applications/Raycast.app
+sudo xattr -dr com.apple.quarantine /Applications/Stats.app
+open /Applications/Stats.app
 sudo xattr -dr com.apple.quarantine /Applications/MySQLWorkbench.app
 open /Applications/MySQLWorkbench.app
 sudo xattr -dr com.apple.quarantine /Applications/Postman.app
@@ -24,14 +32,10 @@ sudo xattr -dr com.apple.quarantine /Applications/Microsoft\ Edge.app
 open /Applications/Microsoft\ Edge.app
 sudo xattr -dr com.apple.quarantine /Applications/Chromium.app
 open /Applications/Chromium.app
-sudo xattr -dr com.apple.quarantine /Applications/firefox.app
-open /Applications/firefox.app
 sudo xattr -dr com.apple.quarantine /Applications/Android\ Studio.app
 open /Applications/Android\ Studio.app
 sudo xattr -dr com.apple.quarantine /Applications/iTerm.app
 open /Applications/iTerm.app
-sudo xattr -dr com.apple.quarantine /Applications/Cyberduck.app
-open /Applications/Cyberduck.app
 sudo xattr -dr com.apple.quarantine /Applications/meld.app
 open /Applications/meld.app
 sudo xattr -dr com.apple.quarantine /Applications/docker.app
@@ -40,23 +44,9 @@ sudo xattr -dr com.apple.quarantine /Applications/dbeaver.app
 open /Applications/dbeaver.app
 sudo xattr -dr com.apple.quarantine /Applications/figma.app
 open /Applications/figma.app
-sudo xattr -dr com.apple.quarantine /Applications/Karabiner-Elements.app
-open /Applications/Karabiner-Elements.app
-
-open /Applications/slack.app
-open /Applications/kakaotalk.app
-open /Applications/line.app
 
 # install font
 cp -a ./fonts/. ~/Library/Fonts
-
-# Ruby
-chmod 755 ./ruby/install.sh
-./ruby/install.sh
-
-# Node
-chmod 755 ./node/install.sh
-./node/install.sh
 
 # configure zsh
 chmod 755 ./zsh/install.sh
@@ -70,14 +60,6 @@ chmod 755 ./vscode/install.sh
 chmod 755 ./iterm2/install.sh
 ./iterm2/install.sh
 
-# install jekyll
-chmod 755 ./jekyll/install.sh
-./jekyll/install.sh
-
-# install react-native
-chmod 755 ./react-native/install.sh
-./react-native/install.sh
-
 # install xcode
 chmod 755 ./xcode/install.sh
 ./xcode/install.sh
@@ -89,10 +71,6 @@ rbenv rehash
 # configure redis
 chmod 755 ./redis/install.sh
 ./redis/install.sh
-
-# Laravel
-chmod 755 ./laravel/install.sh
-./laravel/install.sh
 
 # Set screenshot folder
 chmod 755 ./screenshot/install.sh

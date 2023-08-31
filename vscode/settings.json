@@ -1,5 +1,7 @@
 {
   "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+  "terminal.integrated.fontSize": 14,
+  "debug.console.fontSize": 14,
   "editor.fontFamily": "'D2Coding ligature'",
   "editor.fontLigatures": true,
   "window.restoreWindows": "all",
@@ -53,7 +55,9 @@
     "editor.defaultFormatter": "unifiedjs.vscode-remark"
   },
   "editor.suggestSelection": "first",
-  "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
+  "python.linting.pylintArgs": [
+    "--load-plugins=pylint_django"
+  ],
   "workbench.iconTheme": "vscode-icons",
   "editor.tabSize": 2,
   "[python]": {
@@ -61,7 +65,9 @@
     "editor.tabSize": 4,
     "editor.formatOnType": true
   },
-  "cSpell.enableFiletypes": ["!markdown"],
+  "cSpell.enableFiletypes": [
+    "!markdown"
+  ],
   "python.languageServer": "Pylance",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -69,15 +75,22 @@
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [80],
+    "editor.rulers": [
+      80
+    ],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    }
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
   "dart.debugSdkLibraries": false,
+  "dart.previewFlutterUiGuides": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -93,7 +106,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.userWords": ["asdfasdfasdfasdf"],
+  "cSpell.userWords": [
+    "asdfasdfasdfasdf"
+  ],
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
@@ -106,7 +121,7 @@
     "scminput": false,
     "yaml": true
   },
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "One Dark Pro",
   "redhat.telemetry.enabled": false,
   "swaggerViewer.previewInBrowser": true,
   "workbench.editor.showTabs": true,
