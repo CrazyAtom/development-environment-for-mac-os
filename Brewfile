@@ -49,6 +49,7 @@ cask "microsoft-outlook"
 cask "monitorcontrol"
 cask "raycast"
 cask "stats"
+cask "keka"
 
 cask 'android-studio'
 cask 'mysqlworkbench'

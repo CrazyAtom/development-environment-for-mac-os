@@ -14,6 +14,10 @@ rbenv rehash
 rbenv global ${VERSION}
 rbenv rehash
 
+sudo xattr -dr com.apple.quarantine /Applications/Fork.app
+open /Applications/Fork.app
+sudo xattr -dr com.apple.quarantine /Applications/Itsycal.app
+open /Applications/Itsycal.app
 sudo xattr -dr com.apple.quarantine /Applications/Hidden\ Bar.app
 open /Applications/Hidden\ Bar.app
 sudo xattr -dr com.apple.quarantine /Applications/MonitorControl.app
@@ -22,6 +26,8 @@ sudo xattr -dr com.apple.quarantine /Applications/Raycast.app
 open /Applications/Raycast.app
 sudo xattr -dr com.apple.quarantine /Applications/Stats.app
 open /Applications/Stats.app
+sudo xattr -dr com.apple.quarantine /Applications/Keka.app
+open /Applications/Keka.app
 sudo xattr -dr com.apple.quarantine /Applications/MySQLWorkbench.app
 open /Applications/MySQLWorkbench.app
 sudo xattr -dr com.apple.quarantine /Applications/Postman.app
