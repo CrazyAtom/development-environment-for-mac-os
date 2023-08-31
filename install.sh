@@ -28,6 +28,8 @@ sudo xattr -dr com.apple.quarantine /Applications/Stats.app
 open /Applications/Stats.app
 sudo xattr -dr com.apple.quarantine /Applications/Keka.app
 open /Applications/Keka.app
+sudo xattr -dr com.apple.quarantine /Applications/AppCleaner.app
+open /Applications/AppCleaner.app
 sudo xattr -dr com.apple.quarantine /Applications/MySQLWorkbench.app
 open /Applications/MySQLWorkbench.app
 sudo xattr -dr com.apple.quarantine /Applications/Postman.app

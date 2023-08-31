@@ -50,6 +50,7 @@ cask "monitorcontrol"
 cask "raycast"
 cask "stats"
 cask "keka"
+cask "appcleaner"
 
 cask 'android-studio'
 cask 'mysqlworkbench'
