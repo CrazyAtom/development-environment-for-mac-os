@@ -44,6 +44,7 @@ brew 'bundletool'
 
 mas 'Amphetamine', id: 937984704
 mas 'Slack', id: 803453959
+mas 'RunCat', id: 1429033973
 #mas 'Snap', id: 418073146
 
 cask "fliqlo"
