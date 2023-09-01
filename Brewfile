@@ -42,6 +42,10 @@ brew 'goenv'
 brew 'golangci-lint'
 brew 'bundletool'
 
+mas 'Amphetamine', id: 937984704
+mas 'Slack', id: 803453959
+#mas 'Snap', id: 418073146
+
 cask "fliqlo"
 cask "fork"
 cask "hiddenbar"
