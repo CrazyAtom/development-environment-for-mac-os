@@ -48,6 +48,8 @@ sudo xattr -dr com.apple.quarantine /Applications/meld.app
 open /Applications/meld.app
 sudo xattr -dr com.apple.quarantine /Applications/docker.app
 open /Applications/docker.app
+sudo xattr -dr com.apple.quarantine /Applications/Rectangle.app
+open /Applications/Rectangle.app
 sudo xattr -dr com.apple.quarantine /Applications/dbeaver.app
 open /Applications/dbeaver.app
 sudo xattr -dr com.apple.quarantine /Applications/figma.app
