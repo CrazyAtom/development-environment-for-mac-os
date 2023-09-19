@@ -1,3 +1,4 @@
-fvm install 3.10.6
+fvm install 3.13.1
+fvm global 3.13.1
 
-flutter doctor
+source ~/.zshrc
