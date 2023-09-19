@@ -126,6 +126,18 @@ echo "End #############################################################"
 #./infra/install.sh
 
 
+echo "Congiguration for Mac"
+echo "Start ###########################################################"
+
+chmod 755 ./macos/dock.sh
+zsh ./macos/dock.sh
+
+chmod 755 ./macos/touchpad.sh
+zsh ./macos/touchpad.sh
+
+echo "End #############################################################"
+
+
 echo "Open app for settings"
 echo "Start ###########################################################"
 
@@ -153,35 +165,11 @@ open /Applications/Keka.app
 sudo xattr -dr com.apple.quarantine /Applications/AppCleaner.app
 open /Applications/AppCleaner.app
 
-sudo xattr -dr com.apple.quarantine /Applications/MySQLWorkbench.app
-open /Applications/MySQLWorkbench.app
-
-sudo xattr -dr com.apple.quarantine /Applications/Postman.app
-open /Applications/Postman.app
-
-sudo xattr -dr com.apple.quarantine /Applications/Google\ Chrome.app
-open /Applications/Google\ Chrome.app
-
 sudo xattr -dr com.apple.quarantine /Applications/Android\ Studio.app
 open /Applications/Android\ Studio.app
 
-sudo xattr -dr com.apple.quarantine /Applications/iTerm.app
-open /Applications/iTerm.app
-
-sudo xattr -dr com.apple.quarantine /Applications/meld.app
-open /Applications/meld.app
-
-sudo xattr -dr com.apple.quarantine /Applications/docker.app
-open /Applications/docker.app
-
 sudo xattr -dr com.apple.quarantine /Applications/Rectangle.app
 open /Applications/Rectangle.app
-
-sudo xattr -dr com.apple.quarantine /Applications/dbeaver.app
-open /Applications/dbeaver.app
-
-sudo xattr -dr com.apple.quarantine /Applications/figma.app
-open /Applications/figma.app
 
 echo "End #############################################################"
 
