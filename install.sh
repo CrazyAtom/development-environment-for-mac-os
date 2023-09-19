@@ -43,13 +43,8 @@ echo "End #############################################################"
 echo "Install Ruby"
 echo "Start ###########################################################"
 
-VERSION=3.2.2
-
-rbenv install ${VERSION}
-rbenv rehash
-
-rbenv global ${VERSION}
-rbenv rehash
+chmod 755 ./ruby/install.sh
+./ruby/install.sh
 
 echo "End #############################################################"
 
