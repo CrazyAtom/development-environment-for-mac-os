@@ -1,132 +1,166 @@
 {
-  "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
-  "terminal.integrated.fontSize": 14,
-  "debug.console.fontSize": 14,
-  "editor.fontFamily": "'D2Coding ligature'",
-  "editor.fontLigatures": true,
-  "window.restoreWindows": "all",
-  "javascript.format.enable": false,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.DS_Store": true,
-    "*/node_modules": true,
-    "**/.idea": true,
-    "**/.vscode": false,
-    "**/yarn.lock": true,
-    "**/tmp": true,
-    "node_modules": true,
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/node_modules/**": true,
-    "**/tmp": true,
-    "**/build": true,
-    "**/.fvm": true
-  },
-  "files.trimTrailingWhitespace": true,
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "**/tmp": true,
-    "**/coverage": true,
-    "**/build": true,
-    "**/Pods": true,
-    "**/*.xcodeproj": true,
-    "**/*.xcworkspace": true,
-    "**/.meteor": true,
-    "**/.fvm": true
-  },
-  "editor.formatOnSave": true,
-  "extensions.autoUpdate": true,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "[markdown]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "unifiedjs.vscode-remark"
-  },
-  "editor.suggestSelection": "first",
-  "python.linting.pylintArgs": [
-    "--load-plugins=pylint_django"
-  ],
-  "workbench.iconTheme": "vscode-icons",
-  "editor.tabSize": 2,
-  "[python]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-    "editor.formatOnType": true
-  },
-  "cSpell.enableFiletypes": [
-    "!markdown"
-  ],
-  "python.languageServer": "Pylance",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [
-      80
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "typescriptreact"
     ],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false,
+    "window.restoreWindows": "all",
+    "javascript.format.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "*/node_modules": true,
+        "**/.idea": true,
+        "**/.vscode": false,
+        "**/yarn.lock": true,
+        "**/tmp": true,
+        "node_modules": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true,
+        "**/tmp": true,
+        "**/build": true,
+        "**/.fvm": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/tmp": true,
+        "**/coverage": true,
+        "**/build": true,
+        "**/Pods": true,
+        "**/*.xcodeproj": true,
+        "**/*.xcworkspace": true,
+        "**/.meteor": true,
+        "**/.fvm": true
+    },
     "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.organizeImports": true
-    }
-  },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "dart.debugSdkLibraries": false,
-  "dart.previewFlutterUiGuides": true,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "cSpell.userWords": [
-    "asdfasdfasdfasdf"
-  ],
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "editor.inlineSuggest.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false,
-    "yaml": true
-  },
-  "workbench.colorTheme": "One Dark Pro",
-  "redhat.telemetry.enabled": false,
-  "swaggerViewer.previewInBrowser": true,
-  "workbench.editor.showTabs": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "git.openRepositoryInParentFolders": "always",
-  "window.zoomLevel": 2,
-  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+        "source.fixAll.eslint": true
+    },
+    "editor.fontFamily": "'D2Coding ligature'",
+    "editor.inlineHints.fontFamily": "'D2Coding ligature'",
+    "editor.fontSize": 12,
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.minimap.enabled": false,
+    "editor.accessibilitySupport": "off",
+    "editor.stickyScroll.enabled": true,
+    "extensions.autoUpdate": true,
+    "plantuml.urlResult": "SimpleURL",
+    "plantuml.urlFormat": "svg",
+    "plantuml.includepaths": [],
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        }
+    },
+    "[javascript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[javascriptreact]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[css]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "[cpp]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4,
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "js/ts.implicitProjectConfig.strictNullChecks": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+    "terminal.integrated.fontSize": 14,
+    "cmake.configureOnOpen": true,
+    "debug.console.fontSize": 14,
+    "files.autoSave": "afterDelay",
+    "C_Cpp.default.cppStandard": "c++17",
+    "tabnine.experimentalAutoImports": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "php": "C:\\php\\php.exe",
+        "python": "python",
+        "perl": "perl",
+        "ruby": "C:\\Ruby23-x64\\bin\\ruby.exe",
+        "go": "go run",
+        "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "code-runner.runInTerminal": true,
+    "prettier.requireConfig": true,
+    "[json]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "always",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true
+        },
+        "editor.bracketPairColorization.enabled": true
+    },
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.openDevTools": "flutter",
+    "dart.debugSdkLibraries": false,
+    "workbench.iconTheme": "vscode-icons",
 }
