@@ -9,6 +9,7 @@ apps=(
   "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
   "/Applications/iTerm.app"
   "/Applications/Visual Studio Code.app"
+  "/Applications/MySQLWorkbench.app"
   "/Applications/Figma.app"
   "/Applications/Postman.app"
   "/System/Library/CoreServices/Applications/Screen Sharing.app"
