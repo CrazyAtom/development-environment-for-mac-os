@@ -58,24 +58,18 @@ cask "raycast"
 cask "stats"
 cask "keka"
 cask "appcleaner"
-
 cask 'android-studio'
 cask 'mysqlworkbench'
 cask 'postman'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'figma'
-cask 'pgadmin4'
-cask 'google-cloud-sdk'
-cask 'nosql-workbench'
-cask 'local'
 cask 'framer'
 cask 'dbeaver-community'
-tap 'mongodb/brew'
-brew 'mongodb-community'
 cask 'visual-studio-code'
 cask 'meld'
 cask 'docker'
 cask 'rectangle'
+
 tap 'leoafarias/fvm'
 brew 'fvm'
