@@ -19,7 +19,6 @@ brew "bat"
 brew "neovim"
 brew "asdf"
 brew "fzf"
-#brew "fasd"
 
 brew "zsh"
 brew "zsh-autosuggestions"
