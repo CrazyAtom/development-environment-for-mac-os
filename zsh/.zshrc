@@ -67,7 +67,6 @@ plugins=(
     git 
     virtualenv
     fzf
-    fasd
     asdf
 )
 
@@ -76,13 +75,6 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 
-alias a='fasd -a'        # any 이동
-alias s='fasd -si'       # interactive + select
-alias d='fasd -d'        # 디렉터리찾기
-alias f='fasd -f'        # 파일찾기
-alias sd='fasd -sid'     # 디렉터리 선택
-alias z='fasd_cd -d'     # 디렉터리 이동
-alias zz='fasd_cd -d -i' # 디렉터리 선택 후 이동
 alias cat='bat --paging=never'
 
 alias vi=nvim
