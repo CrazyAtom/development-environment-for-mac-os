@@ -17,6 +17,7 @@ echo "End #############################################################"
 
 echo "Install apps by brew"
 echo "Start ###########################################################"
+
 while ! brew bundle --file=./Brewfile
 do
     sleep 10
@@ -38,6 +39,14 @@ chmod 755 ./screenshot/install.sh
 # Change Git Default branch name
 git config --global init.defaultBranch main
 git config core.ignorecase false
+
+# Key Binding
+cp ./KeyBindings/DefaultkeyBinding.dict ~/Library/DefaultkeyBinding.dict
+
+# Set Dbeaver
+# rm -rf ~/Library/DBeaverData/
+# mkdir -p ~/Library/DBeaverData/workspace6/General/.dbeaver/
+# cp -R ./dbeaver/ ~/Library/DBeaverData/workspace6/General/.dbeaver/
 
 echo "End #############################################################"
 
@@ -78,24 +87,6 @@ chmod 755 ./vscode/install.sh
 echo "End #############################################################"
 
 
-echo "Install XCode"
-echo "Start ###########################################################"
-
-chmod 755 ./xcode/install.sh
-./xcode/install.sh
-
-echo "End #############################################################"
-
-
-echo "Install Fastlane"
-echo "Start ###########################################################"
-
-gem install fastlane -NV
-rbenv rehash
-
-echo "End #############################################################"
-
-
 echo "Install Flutter"
 echo "Start ###########################################################"
 
@@ -110,17 +101,36 @@ echo "Start ###########################################################"
 
 chmod 755 ./go/install.sh
 ./go/install.sh
+
 echo "End #############################################################"
 
 
-# configure redis
-#chmod 755 ./redis/install.sh
-#./redis/install.sh
+echo "Install Fastlane"
+echo "Start ###########################################################"
+
+gem install fastlane -NV
+rbenv rehash
+
+echo "End #############################################################"
 
 
-# Install Infra
-#chmod 755 ./infra/install.sh
-#./infra/install.sh
+echo "Install XCode"
+echo "Start ###########################################################"
+
+chmod 755 ./xcode/install.sh
+./xcode/install.sh
+
+echo "End #############################################################"
+
+
+echo "Keep in Dock"
+echo "Start ###########################################################"
+
+chmod 755 ./macos/dock.sh
+./macos/dock.sh
+
+echo "End #############################################################"
+
 
 
 echo "Congiguration for Mac"
@@ -138,11 +148,8 @@ echo "End #############################################################"
 echo "Open app for settings"
 echo "Start ###########################################################"
 
-sudo xattr -dr com.apple.quarantine /Applications/Fork.app
-open /Applications/Fork.app
-
-sudo xattr -dr com.apple.quarantine /Applications/Itsycal.app
-open /Applications/Itsycal.app
+sudo xattr -dr com.apple.quarantine /Applications/Raycast.app
+open /Applications/Raycast.app
 
 sudo xattr -dr com.apple.quarantine /Applications/Hidden\ Bar.app
 open /Applications/Hidden\ Bar.app
@@ -150,17 +157,11 @@ open /Applications/Hidden\ Bar.app
 sudo xattr -dr com.apple.quarantine /Applications/MonitorControl.app
 open /Applications/MonitorControl.app
 
-sudo xattr -dr com.apple.quarantine /Applications/Raycast.app
-open /Applications/Raycast.app
-
 sudo xattr -dr com.apple.quarantine /Applications/Stats.app
 open /Applications/Stats.app
 
-sudo xattr -dr com.apple.quarantine /Applications/Keka.app
-open /Applications/Keka.app
-
-sudo xattr -dr com.apple.quarantine /Applications/AppCleaner.app
-open /Applications/AppCleaner.app
+sudo xattr -dr com.apple.quarantine /Applications/Itsycal.app
+open /Applications/Itsycal.app
 
 sudo xattr -dr com.apple.quarantine /Applications/Android\ Studio.app
 open /Applications/Android\ Studio.app

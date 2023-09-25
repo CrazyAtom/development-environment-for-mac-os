@@ -15,23 +15,12 @@ brew 'nvm'
 brew 'watchman'
 brew "librsvg"
 brew "graphviz"
-brew "bat"
-brew "neovim"
-brew "asdf"
-brew "fzf"
-
-brew "zsh"
-brew "zsh-autosuggestions"
-brew "zsh-completions"
-brew "zsh-syntax-highlighting"
-
 brew 'tree'
 brew 'openssl'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'postgresql@14'
 brew 'redis'
-brew 'cmake'
 brew 'gh'
 brew 'gdal'
 brew 'lefthook'
@@ -44,7 +33,6 @@ brew 'bundletool'
 mas 'Amphetamine', id: 937984704
 mas 'Slack', id: 803453959
 mas 'RunCat', id: 1429033973
-#mas 'Snap', id: 418073146
 
 cask "fliqlo"
 cask "fork"

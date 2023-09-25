@@ -5,13 +5,16 @@ sleep 10
 killall Dock
 apps=(
   "/System/Applications/Launchpad.app"
-  "/Applications/Google Chrome.app"
   "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-  "/Applications/iTerm.app"
+  "/Applications/Google Chrome.app"
   "/Applications/Visual Studio Code.app"
+  "/Applications/DBeaver.app"
   "/Applications/MySQLWorkbench.app"
   "/Applications/Figma.app"
   "/Applications/Postman.app"
+  "/Applications/Fork.app"
+  "/Applications/Keka.app"
+  "/Applications/AppCleaner.app"
   "/System/Library/CoreServices/Applications/Screen Sharing.app"
 )
 for app in "${apps[@]}"; do
