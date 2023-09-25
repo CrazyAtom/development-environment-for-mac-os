@@ -43,11 +43,6 @@ git config core.ignorecase false
 # Key Binding
 cp ./KeyBindings/DefaultkeyBinding.dict ~/Library/DefaultkeyBinding.dict
 
-# Set Dbeaver
-# rm -rf ~/Library/DBeaverData/
-# mkdir -p ~/Library/DBeaverData/workspace6/General/.dbeaver/
-# cp -R ./dbeaver/ ~/Library/DBeaverData/workspace6/General/.dbeaver/
-
 echo "End #############################################################"
 
 
@@ -68,14 +63,6 @@ chmod 755 ./zsh/install.sh
 
 echo "End #############################################################"
 
-
-echo "Install iTerms2"
-echo "Start ###########################################################"
-
-chmod 755 ./iterm2/install.sh
-./iterm2/install.sh
-
-echo "End #############################################################"
 
 
 echo "Install VSCode"
@@ -168,6 +155,9 @@ open /Applications/Android\ Studio.app
 
 sudo xattr -dr com.apple.quarantine /Applications/Rectangle.app
 open /Applications/Rectangle.app
+
+sudo xattr -dr com.apple.quarantine /Applications/Shottr.app
+open /Applications/Shottr.app
 
 echo "End #############################################################"
 

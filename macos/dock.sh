@@ -8,7 +8,6 @@ apps=(
   "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
   "/Applications/Google Chrome.app"
   "/Applications/Visual Studio Code.app"
-  "/Applications/DBeaver.app"
   "/Applications/MySQLWorkbench.app"
   "/Applications/Figma.app"
   "/Applications/Postman.app"
