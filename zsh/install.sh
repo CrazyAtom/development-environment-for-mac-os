@@ -4,13 +4,13 @@
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #install zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions /Users/$USER/.oh-my-zsh/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH/plugins/zsh-autosuggestions
 
 #install zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /Users/$USER/.oh-my-zsh/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/plugins/zsh-syntax-highlighting
 
 # install zsh theme
-git clone https://github.com/romkatv/powerlevel10k.git /Users/$USER/.oh-my-zsh/themes/powerlevel10k
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH/themes/powerlevel10k
 
 # copy my zsh settings
 cp ./zsh/.zshrc ~/.zshrc

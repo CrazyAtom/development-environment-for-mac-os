@@ -8,8 +8,12 @@ echo "Start ###########################################################"
 
 # m1 brew path
 if [[ $(uname -m) == 'arm64' ]]; then
-echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
+echo "Setting Brew on ARM64 ###########################################################"
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/$USER/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.zshrc
+echo "End ###########################################################"
 fi
 
 echo "End #############################################################"
