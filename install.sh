@@ -164,9 +164,6 @@ open /Applications/Shottr.app
 echo "End #############################################################"
 
 
-echo "Please change wallpaper"
-echo "Right click on the desktop -> Change Wallpaper... -> Select Black color"
-
 echo "Please change keyboard shortcuts by yourself."
 echo "Oepn System Settings -> Keyboard -> Keyboard Shortcuts... -> Input Sources -> Select the previous input source -> Change to Command + Space"
 echo "Oepn System Settings -> Keyboard -> Keyboard Shortcuts... -> Input Sources -> Select Next source input menu -> Change to Command + Shift + Space"
