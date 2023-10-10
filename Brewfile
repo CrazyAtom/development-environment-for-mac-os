@@ -34,17 +34,17 @@ mas 'Amphetamine', id: 937984704
 mas 'Slack', id: 803453959
 mas 'RunCat', id: 1429033973
 
-cask "fliqlo"
-cask "fork"
-cask "hiddenbar"
-cask "itsycal"
-cask "maccy"
-cask "microsoft-outlook"
-cask "monitorcontrol"
-cask "raycast"
-cask "stats"
-cask "keka"
-cask "appcleaner"
+cask 'fliqlo'
+cask 'fork'
+cask 'hiddenbar'
+cask 'itsycal'
+cask 'maccy'
+cask 'microsoft-outlook'
+cask 'monitorcontrol'
+cask 'raycast'
+cask 'stats'
+cask 'keka'
+cask 'appcleaner'
 cask 'android-studio'
 cask 'mysqlworkbench'
 cask 'postman'
@@ -57,6 +57,7 @@ cask 'meld'
 cask 'docker'
 cask 'rectangle'
 cask 'shottr'
+cask 'maccy'
 
 tap 'leoafarias/fvm'
 brew 'fvm'
