@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="/opt/homebrew/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -83,12 +82,7 @@ alias gem=$HOME/.rbenv/shims/gem
 alias rails=$HOME/.rbenv/shims/rails
 alias rake=$HOME/.rbenv/shims/rake
 
-alias vi=nvim
-alias vim=nvim
-export EDITOR=/usr/local/bin/nvim
-
 source $ZSH/oh-my-zsh.sh
-
 
 # User configuration
 
@@ -138,10 +132,6 @@ eval "$(pyenv init -)"
 # pyenv-virtualenv setting
 eval "$(pyenv virtualenv-init -)"
 
-# composer
-export PATH="/usr/local/opt/php@7.2/bin:$PATH"
-export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
-alias composer="php /usr/local/bin/composer"
 # mysql
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
@@ -151,9 +141,6 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# postgresql
-export PGDATA='/usr/local/var/postgres'
 
 export GIT_MERGE_AUTOEDIT=no
 
@@ -182,11 +169,3 @@ alias go=~/.goenv/shims/go
 # JDK
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
-
-DEFAULT_USER="$(whoami)"
-
-prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-  fi
-}
